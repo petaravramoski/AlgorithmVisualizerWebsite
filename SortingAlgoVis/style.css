@@ -1,0 +1,204 @@
+/************************** nav bar **************************************/
+/* make the nav bar cover whole top part of screen */
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+nav { /*everything to do with nav bar */
+    background-color: #1f3742; /* Background color of the navigation bar */
+    color: #fff; /* Text color for the links */
+    text-align: center; /* Center-align the links horizontally */
+    height: 60px;  /* Nav Bar length */
+    width: 100%; /* Set the width to 100% to span the viewport */
+  }
+  
+  nav a {  /*everything to do with nav bar text */
+    text-decoration: none; /* Remove underlines from links */
+    padding: 10px 30px; /* Add padding to the links for spacing */
+    color: #fff; /* Text color for the links */
+    line-height: 60px; /* Adjust the line-height to vertically center the text */
+    font-family: monospace;
+    transition: background-color 0.3s ease;
+    background-color: #1f3742;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+  
+  nav a:hover {
+    background-color: rgba(56, 95, 123, 0.7); /* Use rgba to set a transparent background color */
+  }
+/**********************************************************/
+
+
+/***************algo container********************/
+/* Container where algorithms visualasation will go in */
+.centered-container {
+  width: 800px; /* Adjust the width as needed */
+  height: 600px; /* Adjust the height as needed */
+  background-color: #1f3742; /* Optional background color for the container */
+  border: 1px solid #ccc; /* Optional border */
+  text-align: center; /* Optional text alignment */
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
+  flex-direction: row; /* Stack bars from left to right */
+  justify-content: flex-start; /* Align bars to the left */
+  flex-wrap: nowrap; /* Prevent bars from wrapping to the next row */
+  border-radius: 4px;
+  position: absolute;
+  top: 55%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+}
+
+
+/* ********************button and array input ******************** */
+/* Style for the label and input */
+label {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+/* Style for the button */
+button {
+  padding: 20px 20px;
+  background-color: #1f3742;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: monospace;
+  transition: background-color 1s ease;
+}
+
+
+button:hover {
+  background-color: #385f7b; /* New background color on hover */
+  transition-delay: 0.1s; /* Add a delay of 0.5 seconds to the transition */
+}
+
+/*These are the bars that will be showing for each index of the array getting sorted */
+.bar {
+  width: 100px;
+  background-color: rgb(80, 231, 236); /* Default color */
+  margin: 2px;
+  display: inline-block;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 200px;
+}
+/********************************************/
+
+/* Style the <select> element */
+select {
+  background-color: #1f3742; /* Set the background color to black */
+  color: white; /* Set the text color to white */
+  border: none; /* Remove the default border */
+  outline: none; /* Remove the default outline */
+  padding: 5px; /* Add some padding for better spacing */
+  font-family: monospace;
+  border-radius: 5px;
+  margin-top: 15px; /* Adjust the margin-top to move it down */
+  padding-top: 10px; /* Adjust the padding-top to move it down */
+  right: 10px;
+}
+
+
+.text-container-home {
+  width: 800px;
+  height: 600px;
+  border: 1px solid #1f3742;
+  text-align: center;
+  margin: 130px auto;
+  display: flex;
+  flex-direction: column; /* Change to column to stack elements vertically */
+  align-items: flex-start; /* Align elements to the left */
+  border-radius: 40px;
+  border-width: 3px;
+  font-family: monospace;
+  color: #1f3742; /* Change this color to your desired text color */
+  padding-left: 5px;
+  font-size: 19px;
+}
+
+.text-wrapper {
+  margin-bottom: 1px; /* Adjust the margin to control the spacing between paragraphs */
+}
+
+
+.paragraph3 {
+  margin: 35px 0; /* Adjust the top and bottom margin */
+  padding: 0; /* Remove any padding */
+}
+
+/* CSS code to make the logo smaller */
+.img-logo {
+  width: 100px; /* Set the desired width */
+  height: 100px; /* This ensures the height scales proportionally */
+}
+
+
+.group {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+}
+
+/* Styles for the blue button and text */
+.blue-button {
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: #1f3742; /* Blue color for the button */
+  padding: 10px 25px; /* Adjust padding for button size */
+  border: none;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+  font-family: monospace;
+}
+
+.blue-button:hover {
+  background-color:  #385f7b; /* Darker blue color on hover */
+}
+
+#buttonWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+  text-align: center;
+}
+
+#dropdownBar {
+  display: none;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 110px;
+  left: 420px;
+  min-width: 200px;
+  border: 1px solid #1f3742;
+  box-shadow: 0 4px 6px #1f3742;
+  z-index: 1;
+  padding: 10px;
+}
+
+/* Styles for the hidden dropdown bar */
+.hidden {
+  display: none;
+}
+
+
+/* Style the slider */
+#delaySlider {
+  /* Adjust the margin-left to move the slider to the right */
+  margin-left: 25px; /* Adjust the value as needed */
+}

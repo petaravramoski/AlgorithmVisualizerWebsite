@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Sorting Visualizer</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="sort.html">Sort</a>
+    </nav>
+
+    <div id="buttonWrapper">
+      <div id="dropdownButton" class="blue-button">Menu</div>
+    </div>
+    <div id="dropdownBar" class="hidden">
+      <div class="group">
+        <label for="arraySizeInput">Enter array size:</label>
+        <input type="number" id="arraySizeInput" min="5" value="10" max="100" />
+        <button onclick="generateArray()">Generate Array</button>
+      </div>
+      <!-- Drop down menu to select algorithms -->
+      <div class="group">
+        <select id="algorithmSelect">
+          <option value="bubbleSort">Bubble Sort</option>
+          <option value="selectionSort">Selection Sort</option>
+          <option value="insertionSort">insertion Sort</option>
+          <option value="quickSort">quick Sort</option>
+          <option value="mergeSort">merge sort</option>
+          <option value="heapSort">heapSort</option>
+          <option value="bogoSort">bogoSort</option>
+
+          <!-- Add options for other sorting algorithms if needed -->
+        </select>
+      </div>
+      <!-- *********************************************** -->
+      <label for="delaySlider"
+        >Sorting Delay:
+        <input
+          type="range"
+          id="delaySlider"
+          min="15"
+          max="500"
+          step="10"
+          value="100"
+        />
+      </label>
+      <button onclick="sortArray()">Sort</button>
+      <button id="resetButton">Stop</button>
+    </div>
+
+    <!-- Container that holds the bars and where the sorting happens -->
+    <div class="centered-container"></div>
+    <!-- *********************************************** -->
+
+    <div class="container-sort2"></div>
+
+    <script src="sortingAlgorithmsFunctionality.js"></script>
+    <script src="selectionSort.js"></script>
+    <script src="bubbleSort.js"></script>
+    <script src="insertionSort.js"></script>
+    <script src="quickSort.js"></script>
+    <script src="mergeSort.js"></script>
+    <script src="bogoSort.js"></script>
+    <script src="heapSort.js"></script>
+  </body>
+</html>
